@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style>
+            .headi{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+            }
+            body{
+                background-color: white; 
+                background-image: linear-gradient(to bottom right, lightblue, lightpink);
+                padding: 200px;
+                border: 2px solid black;
+                display: flex;
+                flex-direction:column;
+                align-items: center;
+                justify-content: center;   
+            }
+            .ra{
+                border: 2px solid black;
+                padding: 50px;
+                
+            }
+            input{
+                margin: 5px;
+                height: 30px;
+                width: 300px;
+                padding: 15px;
+
+            }
+            .sub{
+                padding: 15px;
+                width: 150px;
+                background-color: antiquewhite;
+                margin-left: 25%;
+                text-align: center;
+                justify-content: center;
+            }
+            .sub:hover{
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ra">
+        <div class="headi">
+        <i class="fa-solid fa-user fa-2xl" ></i>
+        <h1 style="margin-left: 20px;">Sign-in</h1>
+        </div>
+        <!-- <h1>Sign-in</h1> -->
+        <form action="/createSession" method="post">
+            <input type="email" name="email" placeholder="Enter email" required><br>
+            <input type="password" name="password" placeholder="Enter Password" required><br>
+            <input type="submit" value="submit" class="sub">
+        </form>
+        </div>
+    </body>
+</html>
+
